@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Number</title>
+    <!-- Favicon Link -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png" />
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <h1>Guessing Game</h1>
+    <div class="secret-number" id="secret-number">?</div>
+    <div class="guess-container" id="guess-container">
+      <!-- <img src="./assets/img1.png" alt="guess"> -->
+      <input type="number" id="input" />
+      <button class="guess-btn" id="guess-btn">Guess</button>
+    </div>
+    <div class="message-container" id="message-container">
+      Guess a number between 1 to 10
+    </div>
+    <div class="score-container" id="score-container">
+      <p>Chances left : <span id="chances">5</span></p>
+      <p>Your score : <span id="score">0</span></p>
+    </div>
+    <button class="start-btn" id="start-btn">Play Again</button>
+    <!-- custom script -->
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
